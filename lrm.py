@@ -23,7 +23,7 @@ from threestudio.utils.typing import *
 class lrm_Guidance(BaseObject):
     @dataclass
     class Config(BaseObject.Config):
-        model_name: str = "lrm-base-obj-v1"
+        model_name: str = "openlrm-base-obj-1.0"  # "lrm-base-obj-v1"
         sd_model_name: str = "stabilityai/stable-diffusion-xl-base-1.0"
         mode: str = "text2image" # image2image or text2image
         skip: int = 4
